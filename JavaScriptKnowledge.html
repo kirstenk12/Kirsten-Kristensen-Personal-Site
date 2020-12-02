@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Knowledge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+      <div class="NavBar">
+        <ul>
+          <li><a href="index.html" class="active" target="_blank">Resume</a></li>
+          <li><a href="HTMLKnowledge.html" target="_blank">HTML</a></li>
+          <li><a href="CSSKnowledge.html" target="_blank">CSS</a></li>
+          <li><a target="_blank">JavaScript</a></li>
+        </ul>
+      </div>
+
+      <div class="JavaScript">
+        <header id="header4Picture">
+          <section id="header4PictureText">
+        <h2>JavaScript Knowledge</h2>
+        <br><br>
+        <p>JavaScript can be written in three places: inline, internaly and externally.
+          Our best option out of these is to use an external page and link it to
+          your HTML page. To link these pages we use the < script > tag
+          with an src="" attribute leading to your JavaScript code page.</p>
+        <br><br>
+            </section>
+          </header>
+
+        <br><br>
+        <h4>Document Object Model (DOM):</h4>
+        <p>JavaScript uses the DOM to manipulate and change elements of HTMl and CSS. DOM
+           treats the HTML code as a tree diagram, displaying the relationships of the code.</p>
+        <br>
+        <h4>Accessing elements:</h4>
+        <p>We can access elements of the HTML code by ID, class name, element name and tag name
+          using the syntax: <br> document.getElementByID("id") <br>
+          document.getElementByClassName("className") <br> document.getElementByName() <br>
+          document.getElementByTagName() <br> To change the elements we have selected we can add
+          .innerHTML="", or .style="" to change the HTML and CSS properties respectively. </p>
+        <br>
+        <h4>Assigning Variables:</h4>
+        <p>We can assign variables using a few different stratagies: <br> var variableName = n; <br>
+          let variableName = n; <br> const variableName = n; <br> There is little difference between the
+          var and let keywords, however let is most often used recently. On the other hand the const
+          keyword makes sure that the variable cannot be changed later in the program. </p>
+        <br>
+        <h4>JavaScript Data Types:</h4>
+        <p>Numbers (all numbers including infinity and not a number (NaN)) <br> Strings <br> Booleans
+          <br> Null <br>  and Undefined </p>
+        <br>
+        <h4>JavaScript Operators:</h4>
+        <p>+: addition <br> -: subtraction <br> *: multiplication <br> /: division <br> %:
+          modulus(remainder) <br> ++: increment <br> --: decrement <br> **: exponentiation <br> ==:
+          is equal to <br> ===: is equal to (checks for both value and type) </p>
+        <br>
+        <h4>Common HTML Events:</h4>
+        <p>Onchange - when an HTML element has been changed</p>
+        <p id="clickExample">Onclick - when the user clicks an HTML element (click me to see an example)</p>
+        <p id="mouseOverExample">Onmouseover - when the user moves the mouse over an HTML element <br>
+           Onmouseout - when the user moves the mouse away from an HTML element
+          (hover over me to see an example)</p>
+        <p>Onkeydown - when the user pushes a keyboard key</p>
+        <p>Onload - when the browser has finished loading the page</p>
+        <br>
+        <h4>JavaScript Dialogs:</h4>
+        <p>We have three different JavaScript dialogs: <br> Alert: information only dialog <br> Confirm:
+          information and true or false dialog <br> and Prompt: information and text input dialog </p>
+          <br>
+          <button type="button" name="button" class="myButton" id="dialogExample">Click here to see dialog examples</button>
+        <br><br>
+        <h4>JavaScript String:</h4>
+        <p>Strings are declared using let, var or const ="string"; <br> JavaScript strings are indexed starting
+          from 0, however the string contents can not be changed directly using indices. <br> JavaScript strings
+          have a length property with a lot of useful methods. The length property can be accessed using the
+          syntax: stringName.length; </p>
+        <br>
+        <h4>Commonly Used String Methods:</h4>
+        <p>endsWith() <br> indexOf() <br> lastIndexOf() <br> repeat() <br> replace() <br> search("") <br>
+          slice(begining, end) this method will return the items from the start position to the end position
+          but will not alter the string or array. <br> splice(begining, end) this method will take the items from
+          the begining to end, and remove them from the original string or array. <br> split("seperator", n) this
+          method will find the "seperator" and take n items to the right. <br> startsWith() <br> toLowerCase() this
+          method does not need any arguments. <br> toUpperCase() this method does not need any arguments. <br> toString
+          this method does not need any arguments. <br> trim() this method does not need any arguments. <br> parseInt() or
+          parseFloat() these methods can find a number at the start of a string and convert it into a number data type.</p>
+        <br>
+        <h4>JavaScript Loops:</h4>
+        <p>JavaScript supports the following loops: <br> for loop: ex. for(conditions){statements} <br>do while
+          loop: ex. do{statements} while(conditions) <br> while loop: ex while(conditions){statements} <br> for in loop: ex.
+          for(let i in x){console.log(i);} x being an array or a string, this loop will print the index numbers
+          of x. <br> for of statement: ex. for(let c of s){console.log(c);} s being an array or a string, this
+          loop will print the content of s. </p>
+        <br>
+        <h4>Random Number Generator:</h4>
+        <p id="randomExampleText">There is a function in JavaScript that can randomly generate numbers between your
+          chosen range. The syntax for this function is math.random();</p>
+        <br>
+        <button type="button" name="button" class="myButton" id="randomExample">Click here to see a random color
+          assigned to the text!</button>
+        <br><br>
+        <h4>Commonly Used Array Methods:</h4>
+        <p>Unlike strings, array elements can be modified/updated. The commonly used array methods are: <br> Concat:
+          concatenates one or more arrays onto the receiver array <br> Find <br> findIndex <br> Includes <br> indexOf:
+          indexOf(element) returns the first index at which element appears, or -1 if not found <br> lastIndexOf:
+          lastIndexOf(element) returns the last index at which element appears, or -1 if not found <br> Join <br> Push:
+          .push(element,…) adds one or more elements to the end of the array <br> Pop: .pop() removes and returns the
+          last element of the array <br> Shift: .shift() removes and returns the first element of the array <br> unShift:
+          .unshift(element, …) adds one or more elements to the front of the array <br> Reverse: reverse() reverses the
+          elements of the array <br> Sort: sort()  sorts the elements of the array in ascending order based on the start
+          of the number (1, 10,100,2,200,3,4,5) this is how it would sort. To sort in numeric ascending order we have
+          to use .sort(function(a,b){return a-b;}) <br> Slice: slice(start, finish) returns a subarray beginning at start
+          and ending just before finish and doesn’t remove the items from the original array. <br> Splice:
+          splice(index, count(how many to remove), optionalValueWeWantToAdd) removes 'count' elements starting at index,
+          and optionally adds new items. <br> toString </p>
+        <br>
+        <h4>To Be Continued... </h4>
+        <br><br>
+      </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

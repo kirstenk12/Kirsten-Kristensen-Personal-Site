@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Knowledge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+      <div class="NavBar">
+        <ul>
+          <li><a href="index.html" class="active" target="_blank">Resume</a></li>
+          <li><a href="HTMLKnowledge.html" target="_blank">HTML</a></li>
+          <li><a target="_blank">CSS</a></li>
+          <li><a href="JavaScriptKnowledge.html" target="_blank">JavaScript</a></li>
+        </ul>
+      </div>
+
+
+      <div class="CSS">
+        <header id="header3Picture">
+          <section id="header3PictureText">
+        <h2>CSS Knowledge</h2>
+        <br><br>
+        <p>CSS can be written in three places: inline, embedded, and in an external
+          style sheet. Our best option out of these is to use an external style sheet
+          and link it to your HTML page. To link these pages we use the < link > tag
+          with an href attribute leading to your style sheet.</p>
+        <br><br>
+            </section>
+          </header>
+          <br><br>
+        <h4>Selectors</h4>
+        <p>one of the most important parts of styling your website is knowing how to use
+          CSS selectors. This is how we select seperate elements of our HTML code.</p>
+          <br>
+        <h4>Star Selector:</h4>
+        <p>The *{} selector will select everything in your webpage, this is useful in
+          setting margins and padding for the whole page, and perhaps giving a background
+          color or picture to your whole webpage.</p>
+          <br>
+        <h4>Class Selector:</h4>
+        <p>The class selector will select elements with a specific class attribute in the
+          HTML code. To set a class to an HTML element we use the syntax class="NameOfClass"
+          inside the HTML tag. In the CSS file we use the syntax .NameOfClass{} to select
+          all elements with that class name. </p>
+          <br>
+          <h4>ID Selector:</h4>
+          <p>Simialar to the class selector, for the ID selector we set an ID to a HTML tag using
+            the syntax id="NameOfID" inside the HTML tag and the syntax #NameOfID inside
+            the CSS page. </p>
+          <br>
+          <h4>Element Selector:</h4>
+          <p>Using the element selector will select all elements in your HTML page with the selected element.
+            for example if we were to use the syntax p{}, this would select all paragraph elements in
+            your HTML page.</p>
+          <br>
+          <h4>Descendant Selector:</h4>
+          <p>We can use the decendant selector by specifying a parent and then a child HTML element, such as
+             div p{} . Using this selector all paragraphs under a div will be selected.</p>
+          <br>
+          <h4>Pseudo Class Selector:</h4>
+          <p>pseudo class selectors are pre defined groupings used in CSS to deal with special situations
+            that do not exist in standard HTML. some examples of pseudo class selectors include:  element:link{}
+            element:visited{}  element:hover{}</p>
+          <br>
+          <h4>Sibling Selector:</h4>
+          <p>the sibling selector uses the syntax p~ul{}, and will select every unordered list that is preceded
+             by a paragraph.</p>
+          <br>
+          <h4>Adjacent Selector:</h4>
+          <p>The adjacent selector is similar to the sibling selector, however it uses the syntax p+ul{}, and will
+             only select the unordered list when it is immediately after a paragraph.</p>
+          <br>
+          <h4>Nth-Of-Type Selector:</h4>
+          <p>The nth of type selector is particularly useful when there are no classes or ID's in the HTML code.
+             it uses the syntax element:nth-of-type(n){}. For example, if we put p:nth-of-type(odd){}, all of the
+             odd numbered paragraphs would be selected.</p>
+          <br>
+          <h4>Nth-Child Selector:</h4>
+          <p>Similarly the nth-child selector is also very useful when there are no classes or ID's in your HTML
+             code, and are often used in conjunction with an additional element selector. The nth child selector
+             uses the syntax element:nth-child(n){}. This means that only if the element specified is the nth
+             child of its parent will it be selected. In addition we often use it in conjuction with aditional
+             element selector, for example: div p:nth-child(2){}. In this case the paragraph that is the second
+             element in a div will be selected. </p>
+          <br>
+          <h4>Colors:</h4>
+          <p>We can give color to many things in CSS, using various ways to select a color. There are simple
+            colors like red;, blue;, gray;, orange;, purple; ect. that are keywords built in. Or we can use the syntax
+            rgb(n,n,n); to select a specific color. Another method is the rgba(n,n,n,n.n); syntax that will give a
+            specific color as well as giving it a level of transparency. And the final method of selecting colors is
+            the hexadecimal color system. A helpful website for choosing colors that complement each other is
+            <a href="https://Colorhunt.co" target="_blank" id="colors">Color Hunt</a>. The syntax for the hexadecimal
+            color system is #nnnnnn; to select a color. Using the color: syntax inside the curly brackets we can give
+            color to text. Using the background: syntax we can give a color to the entire background, the background
+            of a div or the background of a element.</p>
+          <br>
+          <h4>Background Images:</h4>
+          <p>We can also set an image as a background. To do this we need to use a couple of properties.
+             The {background:url(...);} syntax will set the image as a background to the body or a div. Other important
+             properties include background-repeat: , background-size: and background-position: . These properties can set your
+             background image to cover the page, repeat or not repeat, be center aligned or any number of attributes desired
+             for your background image.</p>
+          <br>
+          <h4>Borders:</h4>
+          <p>We can add borders to divs, pictures ect. by using the syntax border: . Like background images there
+            are a number of important properties associated with giving a border such as the style of
+            border(solid, dotted, dashed, double ect.), the width of the border, the color of the border, and setting
+            rounded borders. However, it is easier to use the shorthand so as to use only one property.
+            For example p{border: solid 5px black} will give a solid, black square border 5 pixels in width.</p>
+          <br>
+          <h4>CSS Box Models:</h4>
+          <p>Some of the most important properties of the css box model is the margin: , padding: , height: and width:
+            properties. We can set these using pixes, percentages and the view width (vw) and view height (vh)
+            settings. The margin properties can move the div from the top, left, right or bottom.</p>
+          <br>
+          <h4>Display Properties:</h4>
+          <p>There are multiple display properties that does different things. <br> The display: block; property
+            displays an element as a block element (like a paragraph), it starts on a new line, and takes up the whole
+            width of the page. <br> The display: inline; property displays an element as an inline element, meaning there
+            can be more than one element on a certain line, and any height and width properties will have no effect. <br>
+            The display:inline-block; property displays an element as an inline block level container. The element
+            itself is formatted as an inline element, but you can apply height and width values. <br> The display: none;
+            property will set this element to not be displayed on the screen, you could also use the property
+            visibility: hidden; the only different is that the display property none will not be displayed or take up any
+            space, where as hidden will not be displayed but will take up space on the page. <br> The display: flex;
+            property displays an element as a block-level flex container. </p>
+          <br>
+          <h4>Position Property:</h4>
+          <p>Like display properties there are multiple position properties that do different things. <br> The
+             position: absolute; property defines the position of a given bounding box from the top and left side
+             margins of the web page. This not only allows objects to be placed in an exact location, it also allows
+             objects to be placed one on top of another. <br> The position: relative; property defines the positioning in
+             such a way that elements are offset from the previous element in the html code. This allows objects to be
+             placed in relation to one another. <br> The position: fixed; property defines the position of a given box
+             relative to the window and remains in its specified location even as the content scrolls underneath it. <br> A
+             similar property is the float: property that can wrap content around other content (such as text around a picture),
+             you can use the float property. The float property determines on which side of the bounding box the element
+             aligns so that the other wraps around it. </p>
+          <br>
+          <h4>Embedding Fonts:</h4>
+          <p>The only way to 100% guarantee that the user will be able to see the exact same font that you design with,
+            is by using font embedding. <br> a helpful website to find free fonts to embed is
+            <a href="https://fonts.google.com/" target="_blank" id="fonts">Google Fonts</a>. <br> To embed a font we have
+            to link a font in the HTML page using the syntax < link rel="" href="" >, and apply it to our text by naming the font
+            name in our CSS stylesheet. for example p{font-family: ;}</p>
+          <br>
+
+      </div>
+
+  </body>
+</html>
